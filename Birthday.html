@@ -1,0 +1,395 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Congrats)</title>
+  <link rel="stylesheet" href="media.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Nobile:400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  background: #000;
+  padding: 50px;
+  background-size: cover;
+}
+
+#card-front {
+  color: #FFDFDF;
+}
+
+#card, #card-front, #card-inside {
+  height: 480px;
+}
+
+.wrap {
+    padding: 1.5em 2.5em;
+    height: 100%;
+}
+#card-front, #card-inside {
+  width: 50%;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 50%;
+}
+
+
+#card-inside .wrap {
+    background: #FFEFEF;
+    -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+}
+#card {
+    max-width: 960px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 5000px;
+    -moz-perspective: 5000px;
+    -webkit-perspective: 5000px;
+    position: relative;
+}
+
+#card h1 {
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-style: italic;
+    font-size: 70px;
+    text-shadow: 
+        4px 4px 0px rgba(0, 0, 0, .15),
+        1px 1px 0 rgba(255, 200, 200, 255),
+        2px 2px 0 rgba(255, 150, 150, 255),
+        3px 3px 0 rgba(255, 125, 125, 255);
+    color: #FFF;
+}
+#card-inside {
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #331717;
+    font-style: italic;
+}
+
+ 
+p:first-child {
+    margin-top: 0;
+}
+
+p.signed {
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5em;
+    margin: 0px;
+
+}
+
+#card-front {
+    background-color: #FF5555;
+    background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
+    background-image: -moz-linear-gradient(top, #FF5555 0%, #FF7777 100%);
+    background-image: -webkit-linear-gradient(top, #FF5555 0%, #FF7777 100%);
+            transform-origin: left;
+       -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+            transition:         transform 1s linear;
+       -moz-transition:    -moz-transform 1s linear;
+    -webkit-transition: -webkit-transform 1s linear;
+    position: relative;
+}
+
+#card-front .wrap {
+            transition: background 1s linear;
+       -moz-transition: background 1s linear;
+    -webkit-transition: background 1s linear;
+}
+
+#card-front button {
+  position: absolute;
+  bottom: 1em;
+  right: -12px;
+  background: #F44;
+  color: #FFF;
+  font-family: 'Nobile', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: .5em;
+  border: none;
+  cursor: pointer;
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+     -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+}
+
+#card-front button:hover,
+#card-front button:focus {
+  background: #F22;
+}
+
+#close {
+  display: none;
+}
+
+#card.open-fully #close,
+#card-open-half #close {
+  display: inline;
+}
+
+#card.open-fully #open {
+  display: none;
+}
+
+
+#card.open-half #card-front,
+#card.close-half #card-front {
+            transform: rotateY(-90deg);
+       -moz-transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+}
+#card.open-half #card-front .wrap {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#card.close-half #card-front .wrap {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#card.open-fully #card-front,
+#card.close-half #card-front {
+  background: url(11.jpg) no-repeat;
+  background-size: cover;
+}
+
+#card.open-fully #card-front {
+    transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+#card.open-fully #card-front .wrap {
+  background: url(11.jpg) no-repeat;
+  background-size: cover;
+}
+
+#card.open-fully #card-front .wrap *,
+#card.close-half #card-front .wrap * {
+   display: none;
+}
+
+footer {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Nobile', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #888;
+  text-align: center;
+}
+
+
+svg path.linear-1 { // stroke works fine, filter doesn't work
+  stroke: white;
+  filter: url(#blur-filter);
+}
+.loading {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ 
+
+.loading .linear-1{
+  stroke-dasharray:281;
+  -webkit-animation: dash 6s infinite linear forwards;
+}
+.loading .linear-2{
+  stroke-dasharray:300;
+  -webkit-animation: dash 5s infinite linear forwards;
+}
+.loading .linear-3{
+  stroke-dasharray:340;
+  -webkit-animation: dash 4s infinite linear forwards;
+}
+.loading .linear-4{
+  stroke-dasharray:400;
+  -webkit-animation: dash 3s infinite linear forwards;
+}
+
+/*Animation*/
+@-webkit-keyframes dash{ from{stroke-dashoffset:814;} to {stroke-dashoffset:-814;}}
+
+
+
+
+h1 {
+    text-shadow: 2px 2px 5px #E21393;
+    font-family: 'Dancing Script', cursive;
+    color: #F97DC4;
+}
+
+.happymart{
+  margin-top: 25px
+}
+
+h3 {
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  display: unset;
+  
+}
+
+
+
+span
+{
+	position: absolute;
+	background: url(heart.png) no-repeat;
+	background-size: 50%;
+	pointer-events: none;
+	transform: translate(-50%,-50%);
+	animation: animate 2s linear infinite;
+}
+@keyframes animate
+{
+	0%{
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		filter: hue-rotate(0deg);
+	}
+	100%{
+		transform: translate(-50%,-1000%);
+		opacity: 0;
+		filter: hue-rotate(720deg);
+	}
+}
+ 
+  </style>
+  </head>
+<body>
+
+<span></span>
+
+  <div class="loading">
+
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="500" height="200" viewBox="0 0 334 120" enable-background="new 0 0 334 120" xml:space="preserve">
+      <filter id="blur-filter" x="-1" y="0" width="200" height="200">
+         <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+       </filter>
+   <path class="linear-1" fill="none" stroke="#E21393" stroke-miterlimit="10" d="M31.333,90c0,0,38-29.333,69.333-15.333S167.333,97.333,184,85.333
+     s31.638-47.49,14-69c-8.615-10.506-19.829-1.669-26,7.667c-3.619,5.474-4.667,12.667-4.667,12.667S151.637,12.315,141,29.333
+     c-5,8-5.667,45.333,19.333,57C204.574,106.979,286.928,102.42,310,88"/>
+   <path class="linear-1" fill="none" stroke="#F97DC4" stroke-miterlimit="10" d="M32.333,90c0,0,38-29.333,69.333-15.333S168.333,97.333,185,85.333
+     s31.638-47.49,14-69c-8.615-10.506-19.829-1.669-26,7.667c-3.619,5.474-4.667,12.667-4.667,12.667S152.637,12.315,142,29.333
+     c-5,8-5.667,45.333,19.333,57C205.574,106.979,287.928,102.42,311,88"/>
+   <path class="linear-3" fill="none" stroke="#E21367" stroke-miterlimit="10" d="M36.333,90c0,0,38-29.333,69.333-15.333S172.333,97.333,189,85.333
+     s31.638-47.49,14-69c-8.615-10.506-19.829-1.669-26,7.667c-3.619,5.474-4.667,12.667-4.667,12.667S156.637,12.315,146,29.333
+     c-5,8-5.667,45.333,19.333,57C209.574,106.979,291.928,102.42,315,88"/>
+   <path class="linear-4" fill="none" stroke="#F97DC4" stroke-miterlimit="10" d="M40.333,90c0,0,38-29.333,69.333-15.333S176.333,97.333,193,85.333
+     s31.638-47.49,14-69c-8.615-10.506-19.829-1.669-26,7.667c-3.619,5.474-4.667,12.667-4.667,12.667S160.637,12.315,150,29.333
+     c-5,8-5.667,45.333,19.333,57C213.574,106.979,295.928,102.42,319,88"/>
+   </svg>
+
+
+   <div class="happymart">
+   <h1>С днём рождения и с 8 марта</h1>
+   <h3>От ёжика <h3 style="font-family: Arial, Helvetica, sans-serif;">:)</h3></h3>
+   </div>
+
+  </div>
+
+
+
+
+
+  <div id="card">
+    <div id="card-inside">
+      <div class="wrap">
+        <p>Привет красавица,</p>
+        <p>“Извини что так запоздал с подарком, я даже не знаю можно ли это назвать подарком. Но как говориться каждый поздравляет так как может, я же вспомнил что неплохо так разбираюсь в алгоритмах. Извини за мой скромный подарок. Хоть я и немогу подарить своей девушке горы, но одного моего взгляда достаточно чтобы догадаться, как мой зайчик дорог мне!</p>
+        <p>Я буду рядом с тобой, когда бы ты ни искала меня.
+        </p>
+        <p>Всегда..</p>
+        <p>Твой милый и пушистый ёжичек:)</p>
+        
+        <center><h4 style="margin:0px;">Автор</h4></center>
+        <p class="signed">Eyvazov Kamran</p>
+        
+      </div>
+    </div>
+    <div id="card-front">
+      <div class="wrap">
+        <h1>Happy Birthday!</h1>
+      </div>
+      <button id="open">&gt;</button>
+      <button id="close">&lt;</button>
+    </div>
+  </div>
+  <script>
+    (function() {
+  function $(id) {
+    return document.getElementById(id);
+  }
+
+  var card = $('card'),
+      openB = $('open'),
+      closeB = $('close'),
+      timer = null;
+  console.log('wat', card);
+  openB.addEventListener('click', function () {
+    card.setAttribute('class', 'open-half');
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(function () {
+      card.setAttribute('class', 'open-fully');
+      timer = null;
+    }, 1000);
+  });
+
+  closeB.addEventListener('click', function () {
+    card.setAttribute('class', 'close-half');
+    if (timer) clearTimerout(timer);
+    timer = setTimeout(function () {
+      card.setAttribute('class', '');
+      timer = null;
+    }, 1000);
+  });
+
+  document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('music').play();
+    document.removeEventListener('click', musicPlay);
+}
+
+}());
+
+
+ 
+
+  </script>
+
+
+<div style="display: none;"> 
+  <audio src="fireworks.mp3"  autoplay="autoplay"  loop="true"></audio>  
+</div>
+
+<div style="visibility: hidden;">
+  <audio src="Beauz & Jvna - Crazy.mp3" id="music" autoplay="autoplay"></audio>
+  </div>
+
+<script src="script2.js"></script>
+  </body>
+  </html>

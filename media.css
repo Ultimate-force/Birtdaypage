@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+    #card-inside {
+        font-size: 6px!important;
+        line-height: 14px!important;
+        font-family: 'Nobile';
+        color: #331717;
+        font-style: italic;
+    }
+
+    #card.open-fully #card-front .wrap {
+        background: url(11.jpg) no-repeat;
+        background-size: cover;
+        background-position-x: 20%!important;
+    }
+
+    .happymart {
+        margin-top: 25px;
+        font-size: 10px!important;
+    }
+
+    #card h1 {
+        text-align: center;
+        font-family: 'Nobile', sans-serif;
+        font-style: italic;
+        font-size: 17px!important;
+        text-shadow: 4px 4px 0px rgb(0 0 0 / 15%), 1px 1px 0 rgb(255 200 200), 2px 2px 0 rgb(255 150 150), 3px 3px 0 rgb(255 125 125);
+        color: #FFF;
+    }
+
+    body {
+        background: #000;
+        padding: 20px!important;
+        background-size: cover;
+    }
+
+    #card, #card-front, #card-inside {
+        height: 270px!important;
+    }
+  }
